@@ -60,16 +60,45 @@ body {
 }
 
 .container .botao {
-    background-color: rgb(138, 138, 138);
+   
+    
+    position: relative;
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px 0;
     color: rgb(255, 255, 255);
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
+    text-decoration: none;
     text-transform: uppercase;
-    transition: 0.5 all ease-in-out;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: linear-gradient(90deg , #1d1b1b, #212e30);
+
 }
+
+.span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0%  {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+}
+
 
 .container .botao:hover{
     transform: scale(1.1);
@@ -99,3 +128,6 @@ body {
     top: 0;
     left: 0;
 } 
+
+
+
