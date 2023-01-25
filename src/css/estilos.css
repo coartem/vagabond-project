@@ -6,9 +6,11 @@ body {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 6px;
     max-width: 1440px;
     margin: 0 auto;
+    
+    
 }
 
 .cabecalho .logo {
@@ -19,19 +21,21 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
+   
 }
 
 .cabecalho nav li a {
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 25px;
     padding: 10px 20px;
     border-radius: 50px;
     transition: 0.2;
+    
 }
 
 .cabecalho nav li a:hover{
-    background-color: #d5011d;
+    background-color: rgb(138, 138, 138);
 }
 
 .container {
@@ -45,7 +49,7 @@ body {
 }
 
 .container .logo-perto {
-    max-width: 500px;
+    max-width: 300px;
 }
 
 .container .descricao {
@@ -56,8 +60,8 @@ body {
 }
 
 .container .botao {
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: rgb(138, 138, 138);
+    color: rgb(255, 255, 255);
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
@@ -89,11 +93,9 @@ body {
 
 .fundo-video::after {
     content: "";
-    height: 100vh;
+    height: 115vh;
     width: 100vw;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
-}
+} 
