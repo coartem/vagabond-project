@@ -20,57 +20,99 @@
 
 
     <title>Vagabond - Manga</title>
+
 </head>
+
 <body>
+    
     <div class="fundo-video">
+    
         <video class="video" autoplay loop muted>
+    
             <source src="./src/video/teste 2.mp4">
+    
         </video>
      
     </div>
 
 
     <header class="cabecalho">
+    
         <a>
+    
             <img  class="logo" src="./src/imagens/vagabond logo 500px.png" alt="musashi sentado">
+    
         </a>
+        
     <nav>
+   
         <ul class="menu">
+   
             <li><a href="#">Personagens</a></li>
+   
             <li><a href="#">Manga</a></li>
+   
         </ul>
+   
     </nav>
-    </header>
+    
+</header>
+    
     <main class="container">
-    <mbutton class="informacoes">
-    <img class="logo-perto" src="./src/imagens/Sem Título-5.png" alt="logo escrito vagabond"> 
-    <p class="descricao">Vagabond (バガボンド Bagabondo) é uma série de mangá escrita e ilustrada por Takehiko Inoue, baseada no romance Musashi, de Eiji Yoshikawa, que conta a história do samurai Miyamoto Musashi (宮本武蔵 1584 a 1645).</p>
+    
+        <div class="informacoes">
+    
+        <img class="logo-perto" src="./src/imagens/Sem Título-5.png" alt="logo escrito vagabond"> 
+    
+    <p class="descricao">
+        
+        Vagabond (バガボンド Bagabondo) é uma série de mangá escrita e ilustrada por Takehiko Inoue, baseada no romance Musashi, de Eiji Yoshikawa, que conta a história do 
+        samurai Miyamoto Musashi (宮本武蔵 1584 a 1645).
+    
+    </p>
 
 
-    <button  class="botao"><a href="https://mangayabu.top/manga/vagabond/" target="_blank" rel="external" style="color: white;">
+    <button  class="botao">
+        <a href="https://mangayabu.top/manga/vagabond/" 
+        target="_blank" rel="external" style="color: white;">
         
         Ler
 
-    </a></button> 
+    
+    </a>
+</button> 
+    </div>
+    
     <script type="text/javascript">
-        const button = document.querySelectorAll('a');
+
+    const button = document.querySelectorAll('a');
+
         button.forEach(btn => {
+
             btn.addEventListener('click', function(e){
+
                 let x = e.clientX - e.target.offsetLeft;
 
                 let ripples = document.createElement('span');
+
                 ripples.style.left = x + 'px';
+
                 this.appendChild(ripples);
 
                 setTimeout(() => {
                     ripples.remove()
                 },1000)
+
             })
+
         })
     </script>
 
 
-    </main>
+   
+
+</main>
 
 </body>
+
 </html>
