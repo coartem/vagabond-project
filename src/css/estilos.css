@@ -21,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
+
     
    
 }
@@ -33,7 +34,7 @@ body {
     font-weight: bold;
     color: #a0a0a0;
     font-size: 25px;
-    padding: 15px 20px;
+    padding: 15px 55px;
     border-radius: 50px;
     transition: 0.2;
     
