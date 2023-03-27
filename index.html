@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./src/css/reset.css">
@@ -24,94 +25,85 @@
 </head>
 
 <body>
-    
+
     <div class="fundo-video">
-    
+
         <video class="video" autoplay loop muted>
-    
+
             <source src="./src/video/teste 2.mp4">
-    
+
         </video>
-     
+
     </div>
 
 
     <header class="cabecalho">
-    
+
         <a>
-    
-            <img  class="logo" src="./src/imagens/vagabond logo 500px.png" alt="musashi sentado">
-    
+
+            <img class="logo" src="./src/imagens/vagabond logo 500px.png" alt="musashi sentado">
+
         </a>
-        
-    <nav>
-   
-        <ul class="menu">
-   
-            <li><a href="pagina02.html" target="_self">Personagens</a></li>
-   
-            <li><a href="https://produto.mercadolivre.com.br/MLB-2791924627-mangas-vagabond-volumes-1-ao-37-coleco-completa-_JM?matt_tool=10832737&matt_word=&matt_source=bing&matt_campaign=MLB_ML_BING_AO_ENTERTAINMENT-ALL-ALL_X_PLA_ALLB_TXS_ALL&matt_campaign_id=382858297&matt_ad_group=ENTERTAINMENT&matt_match_type=e&matt_network=o&matt_device=c&matt_keyword=default&msclkid=698fbe652753110af488ddb106c43169&utm_source=bing&utm_medium=cpc&utm_campaign=MLB_ML_BING_AO_ENTERTAINMENT-ALL-ALL_X_PLA_ALLB_TXS_ALL&utm_term=4579672092721443&utm_content=ENTERTAINMENT" target="_blank" rel="external">Manga</a></li>
-   
-        </ul>
-   
-    </nav>
-    
-</header>
-    
+
+        <nav>
+
+            <ul class="menu">
+
+                <li><a href="pagina02.html" target="_self">Personagens</a></li>
+
+                <li><a href="https://produto.mercadolivre.com.br/MLB-2791924627-mangas-vagabond-volumes-1-ao-37-coleco-completa-_JM?matt_tool=10832737&matt_word=&matt_source=bing&matt_campaign=MLB_ML_BING_AO_ENTERTAINMENT-ALL-ALL_X_PLA_ALLB_TXS_ALL&matt_campaign_id=382858297&matt_ad_group=ENTERTAINMENT&matt_match_type=e&matt_network=o&matt_device=c&matt_keyword=default&msclkid=698fbe652753110af488ddb106c43169&utm_source=bing&utm_medium=cpc&utm_campaign=MLB_ML_BING_AO_ENTERTAINMENT-ALL-ALL_X_PLA_ALLB_TXS_ALL&utm_term=4579672092721443&utm_content=ENTERTAINMENT"
+                        target="_blank" rel="external">Manga</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
     <main class="container">
-    
+
         <div class="informacoes">
-    
-        <img class="logo-perto" src="./src/imagens/Sem Título-5.png" alt="logo escrito vagabond"> 
-    
-    <p class="descricao">
-        
-        Vagabond (バガボンド Bagabondo) é uma série de mangá escrita e ilustrada por Takehiko Inoue, baseada no romance Musashi, de Eiji Yoshikawa, que conta a história do 
-        samurai Miyamoto Musashi (宮本武蔵 1584 a 1645).
-    
-    </p>
 
+            <img class="logo-perto" src="./src/imagens/Sem Título-5.png" alt="logo escrito vagabond">
 
-    <button  class="botao">
-        <a href="https://mangayabu.top/manga/vagabond/" 
-        target="_blank" rel="external" style="color: white;">
-        
-        Ler
+            <p class="descricao">
 
-    
-    </a>
-</button> 
-    </div>
-    
-    <script type="text/javascript">
+                Vagabond (バガボンド Bagabondo) é uma série de mangá escrita e ilustrada por Takehiko Inoue, baseada no
+                romance Musashi, de Eiji Yoshikawa, que conta a história do
+                samurai Miyamoto Musashi (宮本武蔵 1584 a 1645).
 
-    const button = document.querySelectorAll('a');
+            </p>
+        </div>
 
-        button.forEach(btn => {
+        <script type="text/javascript">
 
-            btn.addEventListener('click', function(e){
+            const button = document.querySelectorAll('a');
 
-                let x = e.clientX - e.target.offsetLeft;
+            button.forEach(btn => {
 
-                let ripples = document.createElement('span');
+                btn.addEventListener('click', function (e) {
 
-                ripples.style.left = x + 'px';
+                    let x = e.clientX - e.target.offsetLeft;
 
-                this.appendChild(ripples);
+                    let ripples = document.createElement('span');
 
-                setTimeout(() => {
-                    ripples.remove()
-                },1000)
+                    ripples.style.left = x + 'px';
+
+                    this.appendChild(ripples);
+
+                    setTimeout(() => {
+                        ripples.remove()
+                    }, 1000)
+
+                })
 
             })
-
-        })
-    </script>
+        </script>
 
 
-   
 
-</main>
+
+    </main>
 
 </body>
 
